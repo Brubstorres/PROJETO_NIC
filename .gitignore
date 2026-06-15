@@ -1,5 +1,5 @@
 /.venv
-/requirements.txt
 /main.py
 /.python-version
 /pyproject.toml
+/.env
