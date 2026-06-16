@@ -1,5 +1,5 @@
 from app.backend.database import Base
-from sqlalchemy import Column, Integer, String, Text, Boolean
+from sqlalchemy import Column, Integer, String, Text, Boolean, ForeignKey
 
 class educacional(Base):
     __tablename__ = "educacional"

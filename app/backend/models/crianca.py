@@ -1,4 +1,4 @@
-from sqlalchemy import String, Integer, Column, Date
+from sqlalchemy import String, Integer, Column, Date, ForeignKey
 from app.backend.database import Base
 
 class Crianca(Base):
