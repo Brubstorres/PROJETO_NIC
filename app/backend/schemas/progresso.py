@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import Optional
 
-class Progresso(BaseModel):
+class ProgressoSchema(BaseModel):
     id: Optional[int] = None
     crianca_id: int
     atividadesRealizadas: int = 0

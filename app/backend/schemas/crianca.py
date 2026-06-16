@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import date
 
-class Crianca(BaseModel):
+class CriancaSchema(BaseModel):
     id: Optional[int] = None
     nome: str
     idade: int
