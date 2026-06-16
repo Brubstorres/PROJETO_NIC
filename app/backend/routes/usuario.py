@@ -15,7 +15,7 @@ async def criar_usuario(
     db: Session = Depends(get_db)
 ):
 
-    novo_usuario = Usuario(**dados.model_dump())
+    novo_usuario = UsuarioModels(**dados.model_dump())
 
     db.add(novo_usuario)
 
