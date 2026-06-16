@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import Optional
 
-class Atividade(BaseModel):
+class AtividadeSchema(BaseModel):
     id: Optional[int] = None
     nome: str
     descricao: str
