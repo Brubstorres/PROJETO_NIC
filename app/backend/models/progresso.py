@@ -1,7 +1,7 @@
 from app.backend.database import Base
 from sqlalchemy import Column, Integer, String, Text, Boolean, ForeignKey
 
-class Progresso(Base):
+class ProgressoModels(Base):
     __tablename__ = "progresso"
 
     id = Column(Integer, primary_key=True, index=True)

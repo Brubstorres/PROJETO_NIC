@@ -1,7 +1,7 @@
 from sqlalchemy import String, Integer, Column, Date, ForeignKey
 from app.backend.database import Base
 
-class Crianca(Base):
+class CriancaModels(Base):
     __tablename__ = "criancas"
     id = Column(Integer, primary_key=True)
     nome = Column(String)

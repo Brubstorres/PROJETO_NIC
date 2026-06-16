@@ -1,7 +1,7 @@
 from app.backend.database import Base
 from sqlalchemy import Column, Integer, String, Text, Boolean, ForeignKey
 
-class educacional(Base):
+class educacionalModels(Base):
     __tablename__ = "educacional"
 
     id = Column(Integer, primary_key=True, index=True)
