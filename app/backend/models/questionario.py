@@ -1,7 +1,7 @@
 from app.backend.database import Base
 from sqlalchemy import Column, Integer, String, Text, Boolean
 
-class Questionario(Base):
+class QuestionarioModels(Base):
     __tablename__ = "questionarios"
 
     id = Column(Integer, primary_key=True, index=True)
