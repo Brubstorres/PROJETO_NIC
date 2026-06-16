@@ -15,7 +15,7 @@ async def criar_usuario(
     db: Session = Depends(get_db)
 ):
 
-    novo_usuario = Usuario(**dados.model_dump())
+    novo_usuario = UsuarioModels(**dados.model_dump())
 
     db.add(novo_usuario)
 
@@ -32,7 +32,7 @@ async def listar_usuarios(
     db: Session = Depends(get_db)
 ):
 
-    return db.query(Usuario).all()
+    return db.query(UsuarioModels).all()
 
 # Buscar usuário por ID
 
@@ -43,9 +43,9 @@ async def buscar_usuario(
 ):
 
     usuario_encontrado = db.query(
-        Usuario
+        UsuarioModels
     ).filter(
-        Usuario.id == id
+        UsuarioModels.id == id
     ).first()
 
     if not usuario_encontrado:
@@ -67,9 +67,9 @@ async def atualizar_usuario(
 ):
 
     usuario_atualizar = db.query(
-        Usuario
+        UsuarioModels
     ).filter(
-        Usuario.id == id
+        UsuarioModels.id == id
     ).first()
 
     if not usuario_atualizar:
@@ -104,9 +104,9 @@ async def deletar_usuario(
 ):
 
     usuario_deletar = db.query(
-        Usuario
+        UsuarioModels
     ).filter(
-        Usuario.id == id
+        UsuarioModels.id == id
     ).first()
 
     if not usuario_deletar:
